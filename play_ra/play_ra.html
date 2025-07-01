@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Jovem Rã</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Jovem Rã</h1>
+
+                <p>Seu site Nerd-Geek aqui!</p>
+    </header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Curiosidades</a>
+            <a href="play_ra.html">Play Rã</a>
+        </nav>
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // 1. Pega os elementos do HTML que vamos usar
+        const searchInput = document.getElementById('search-input');
+        const itemsToSearch = document.querySelectorAll('.searchable-item');
+        const noResultsMessage = document.getElementById('no-results');
+
+        // 2. Adiciona um "ouvinte" que dispara uma função toda vez que o usuário digita algo
+        searchInput.addEventListener('input', function() {
+            const searchTerm = searchInput.value.toLowerCase(); // Pega o texto e converte para minúsculas
+            let itemsFound = false; // Uma variável para saber se encontramos algum resultado
+
+            // 3. Passa por cada item pesquisável
+            itemsToSearch.forEach(function(item) {
+                // Pega o texto do título h2 de cada item e converte para minúsculas
+                const itemTitle = item.querySelector('h4').textContent.toLowerCase();
+
+                // 4. Verifica se o título do item inclui o termo pesquisado
+                if (itemTitle.includes(searchTerm)) {
+                    item.style.display = 'block'; // Se incluir, mostra o item
+                    itemsFound = true; // Marca que encontramos pelo menos um
+                } else {
+                    item.style.display = 'none'; // Se não incluir, esconde o item
+                }
+            });
+
+            // 5. Mostra ou esconde a mensagem de "Nenhum resultado"
+            if (itemsFound) {
+                noResultsMessage.style.display = 'none';
+            } else {
+                noResultsMessage.style.display = 'block';
+            }
+        });
+
+    });
+</script>
+<body>
+    <main>
+        <h1>Melhores Vídeos Nerd-Geek</h1>
+    
+<div class="search-bar">
+            <input type="text" id="search-input" placeholder="🔍Pesquisar..." size="60">
+        </div>
+    <h2>Top 10 vídeos de Rap Geek</h2>
+        <h4>#top10 NARUTO SONG -"Believe It" - Divide Music </h4><hr/>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/X4fIqbUjEEI?si=OH0QUT_BvG3ErBOb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <h4>#top9 Rap Shisui - 7 Minutoz</4><hr/>
+
+    <div class="video">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/dET5ZzBSJv8?si=q7fWb74Tfe86gh2C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h4>#top8 Rap Edward Eric - 7 Minutoz</4><hr/>
+
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PYRE6bOlrno?si=wXRltEPful8DR7xj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h4>#top7 Rap Tanjiro (Kimetsu no Yaiba) - Enygma</h4><hr/>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fitLjLcxmJs?si=Ik5biMBVfTlZNSTK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+     <h4>#top6 Rap do Assassin's Creed - Tauz </h4><hr/>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CwKz7j24LPg?si=tT_Fj1ZPFkm6VLlh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <h4>#top5 Rap do Assassin's Creed Syndicate - Tauz</h4><hr/>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TX5yCDdO8ZY?si=YOMNw7CH9RneRBCB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+        <h4>#top4 Rap do Capitão América - Tauz</h4><hr/>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HhpY__EkVZY?si=dYzD2Se_GPX1o9wA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+            <h4>#top3Rap do Nagato / Pain (Naruto) - Tauz </h4><hr/>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IfXZWup8LMs?si=C1Md3Io32obN3a1P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <h4>#top2 Rap do Rock Lee (Naruto) - 7 Minutoz</h4>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XwAzVXBjvNo?si=9x61G8oCGY0Eew4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <h4>#top1 Rap da Akatsuki (Naruto) - OS NINJAS MAIS PROCURADOS DO MUNDO - NERD HITS</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-oYMo8k22Vw?si=yIoZefxNF6_6DHiz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+    </main>
+    <footer id="rodape">
+        <p> © Copyright 2025 - by Alvarindo Index <br>
+            <a href="https://facebook.com/alvarindo.silva.2025/" target="_blank"> Facebook </a> | <a href="https://www.instagram.com/alvarindo_silva/" target="_blank">Instagram</a> | <a href="https://www.tiktok.com/@alvarindo.index" target="_blank">Tiktok</a> | <a href="https://www.youtube.com/@jovemran" target="_blank">Youtube</a>
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>
