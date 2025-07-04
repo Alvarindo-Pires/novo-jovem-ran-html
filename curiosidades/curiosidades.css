@@ -1,0 +1,56 @@
+@charset "UTF_8";
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 3.9vh;
+}
+section > P {
+    padding-bottom: 1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.384);
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p {
+    display: inline-block;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.479);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.534);
+    font: var(--fonte-padrao)
+
+}
+section#img1 {
+    background-image: url('../imagem_jovem_ra/img1_detetive_conan.jpg');
+    background-position: center center;
+   
+}
+section#img2 {
+    background-image: url('../imagem_jovem_ra/img2_detetive_conan.jpg');
+    background-position: center center;
+    
+}
+
+h3 {
+    margin-top: 10px;
+
+}
+img#gosho {
+    width: 170px;
+    padding-top: 10px;
+    
+}
+.box {
+    display: inline-block;
+}
